@@ -73,6 +73,16 @@
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << '\n';
+    int n;
+    cin >> n;
+
+    const int MOD = 1000000007;
+    long long ans = 1;
+
+    for (int i = 0; i < n; i++) {
+        ans = (ans * 2) % MOD;
+    }
+
+    cout << ans;
     return 0;
-} 
+}
